@@ -2,6 +2,7 @@ module.exports = {
   env: {
     SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN,
     SHOPIFY_STOREFRONT_ACCESSTOKEN: process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN,
+    GOOGLE_ANALYTICES_ID: process.env.GOOGLE_ANALYTICES_ID,
   },
   images: {
     domains: ["cdn.shopify.com"],

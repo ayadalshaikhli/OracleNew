@@ -31,20 +31,41 @@ export default function ProductPageContent({ product }) {
 
   useEffect(() => {
     ScrollTrigger.create({
-      trigger: ".product-lol",
+      trigger: ".product-list",
       start: "top 50%",
       end: "bottom 0%",
 
       onEnter: () => {
-        gsap.to(".body", {
+        gsap.to(".colormix", {
+          duration: 1,
+          color: "#000",
+        });
+      },
+
+      onLeaveBack: () => {
+        gsap.to(".colormix", {
+          duration: 1,
+          color: "#fff",
+        });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".product-list",
+      start: "top 50%",
+      end: "bottom 0%",
+
+      onEnter: () => {
+        gsap.to(".colornav", {
           duration: 1.0,
+          color: "#000",
           backgroundColor: "#fff",
         });
       },
 
       onLeaveBack: () => {
-        gsap.to(".body", {
+        gsap.to(".colornav", {
           duration: 1.0,
+          color: "#fff",
           backgroundColor: "#000",
         });
       },

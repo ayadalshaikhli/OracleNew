@@ -14,6 +14,7 @@ export default function FrontPage() {
 
     const interval = setInterval(() => {
       const now = new Date();
+
       const difference = target.getTime() - now.getTime();
 
       const d = Math.floor(difference / (1000 * 60 * 60 * 24));
